@@ -406,22 +406,88 @@
       retention is required by applicable law.
     </p>
 
-    <h2>7. Security</h2>
+    <h2>7. Data Handling and Security</h2>
 
     <p>
-      The Application is designed to minimise the transmission of personal data by processing
-      imported export data locally on your device.
+      This section explains how the personal and sensitive data described above is handled and
+      protected.
+    </p>
+
+    <p>
+      <strong>Imported export files.</strong>
+    </p>
+
+    <ul>
+      <li>
+        The Application opens only the files you pick yourself in Android's system file picker.
+        It does not request permission to read your device's shared storage, photos or other
+        files.
+      </li>
+      <li>
+        To read a selected export, the Application unpacks it into a temporary folder in its
+        private cache directory, which other apps cannot access. Each file in the archive is
+        checked before it is written, so that it can only be placed inside that temporary
+        folder.
+      </li>
+      <li>
+        The temporary folder is deleted as soon as the analysis finishes, whether it succeeds or
+        fails. Your original export file is never changed or deleted.
+      </li>
+      <li>
+        Analysis results, including the usernames and names they contain, are kept only in the
+        device's memory while the Application is open, and are discarded when the Application is
+        closed. They are not written to storage unless you choose one of the options below.
+      </li>
+    </ul>
+
+    <p>
+      <strong>Data stored on your device.</strong> The optional information described in
+      Section 1 (History, permitted accounts, reminder, tour, disclaimer and ad display settings)
+      is stored in the Application's private internal storage. Android's app sandbox prevents
+      other apps from reading it, and on devices with storage encryption enabled (the default on
+      modern Android devices) it is encrypted at rest by the operating system. It is excluded
+      from Android cloud backup, as described in Section 6.
+    </p>
+
+    <p>
+      <strong>Files you export yourself.</strong> If you tap "Export CSV" on a result list, or
+      save a recap image, Android's "Save as" screen opens and the file is written only to the
+      location you choose. A CSV file contains the usernames or names in that list; a recap
+      image contains summary numbers and, for Instagram, the username of your longest-standing
+      follower. Once saved, these files are outside the Application
+      and are protected by your device and the storage location you chose.
+    </p>
+
+    <p>
+      <strong>Data in transit.</strong> The Application has no servers of its own and sends no
+      imported export data or analysis results over the internet. The only data transmitted is
+      the advertising information collected by the Google Mobile Ads SDK (Section 4), which is
+      sent directly to Google over encrypted connections (HTTPS/TLS).
+    </p>
+
+    <p>
+      <strong>Access by the Service Provider.</strong> The Service Provider has no access to
+      your device, your imported export data, your analysis results or the information stored by
+      the Application. There is no user account and no copy of your data held by us.
+    </p>
+
+    <p>
+      <strong>Support emails.</strong> Emails you send us are kept in the Service Provider's
+      email account, which only the developer can access, and are used and retained only as
+      described in Section 5.
+    </p>
+
+    <p>
+      <strong>Security incidents.</strong> If we become aware of a security issue in the
+      Application that could affect your data, we will fix it in an update and, where required
+      by applicable law, notify affected users and the relevant authorities.
     </p>
 
     <p>
       No method of electronic processing or storage can be guaranteed to be completely secure.
-      However, we aim to limit the amount of information accessible to the Service Provider
-      and to avoid unnecessary collection of personal data.
-    </p>
-
-    <p>
-      Users are responsible for protecting access to their device and their original
-      Instagram or Facebook export files.
+      You can help protect your data by using a screen lock on your device and by keeping your
+      original Instagram or Facebook export files, and any files you export from the
+      Application, in a safe place.
     </p>
 
     <h2>8. Children's Privacy</h2>
